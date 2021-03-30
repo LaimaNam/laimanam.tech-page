@@ -1,1 +1,1 @@
-# laimanam.tech-page
+# laimanam.tech
