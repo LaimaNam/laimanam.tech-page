@@ -1,1 +1,0 @@
-# laimanam.tech-page
