@@ -93,20 +93,20 @@ export const renderNavigation = () => {
           <span class="link-text">Contact</span>
         </a>
       </li>
-      <li class="nav-item theme-switcher-wrapper">
-      
-        <span id="toggle-icon">
-          <i id="moon" class="fas fa-moon moon"></i>
-          <i id="sun" class="fas fa-sun moon"></i>
-        </span>
-        <label class="theme-switch">
-          <input type="checkbox" />
-          <div class="slider round"></div>
-        </label>
-        
-      </li>
+     
     </ul>
-    
+    <div class="theme-switcher-wrapper">
+      
+      <span id="toggle-icon">
+        <i id="moon" class="fas fa-moon moon"></i>
+        <i id="sun" class="fas fa-sun moon"></i>
+      </span>
+      <label class="theme-switch">
+        <input type="checkbox" />
+        <div class="slider round"></div>
+      </label>
+
+    </div>
   </nav>
     `;
 };
