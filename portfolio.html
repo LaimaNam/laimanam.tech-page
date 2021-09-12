@@ -26,10 +26,20 @@
       name="keywords"
       content="HTML, CSS, SCSS, JavaScript, Web Development, Front-End, Wordpress"
     />
+
+    <!--  slide css &js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fatihege/nslider@1.0.0/src/css/nslider.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/fatihege/nslider@1.0.0/src/js/nslider.min.js"></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css" />
+
     <!-- Custom JavaScript -->
     <script defer src="./script.js" type="module"></script>
+    <script defer src="./portfolio.js"></script>
   </head>
   <body>
     <!-- N a v i g a t i o n -->
@@ -38,93 +48,145 @@
     </header>
     <main>
       <section class="theme-switch-wrapper"></section>
-      <h1>Portfolio</h1>
+      <!-- <h1>Portfolio</h1> -->
       <!-- P r o j e c t s -->
-
-      <section id="portfolio">
-        <h2>Projects</h2>
-        <div id="portfolioCards">
-          <div class="card webCard flip-card" data-aos="fade-up">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <a href="#portfolio"
-                  ><img src="/assets/hexagon-website3.png" alt=""
-                /></a>
+      <section>
+        <!-- slider -->
+        <div class="container">
+          <div class="nslider">
+            <div class="nslider-wrapper">
+              <div class="nslider-slide" id="slide-1">
+                <div class="portfolio-item">
+                  <div>
+                    <h3>JavaScript</h3>
+                    <a
+                      href="https://elegant-archimedes-cfddc5.netlify.app/"
+                      target="”_blank”"
+                    >
+                      <img
+                        src="./assets/mockups/qg-2.png"
+                        alt="Quote generator"
+                    /></a>
+                  </div>
+                  <h2>Quote generator</h2>
+                </div>
               </div>
-              <a href="hexagon/index.html" target="window"
-                ><div class="flip-card-back">
-                  <p>Responsive Hexagon Portfolio Page</p>
-                </div></a
-              >
+              <div class="nslider-slide" id="slide-2">
+                <div class="portfolio-item">
+                  <div>
+                    <h3>WordPress</h3>
+                    <a href="https://justsaynomaybeyes.com/" target="”_blank”">
+                      <img
+                        src="./assets/mockups/justsaynomaybeyes-portfolio.png"
+                        alt="Artist portfolio"
+                    /></a>
+                  </div>
+                  <h2>Artist portfolio</h2>
+                </div>
+              </div>
+              <div class="nslider-slide" id="slide-3">
+                <div class="portfolio-item">
+                  <div>
+                    <h3>JavaScript</h3>
+                    <a href="https://laimanam.tech/" target="”_blank”">
+                      <img
+                        src="./assets/mockups/mypage.png"
+                        alt="Webdev portfolio"
+                    /></a>
+                  </div>
+                  <h2>Webdev portfolio</h2>
+                </div>
+              </div>
+              <div class="nslider-slide" id="slide-3">
+                <div class="portfolio-item">
+                  <div>
+                    <h3>REACT</h3>
+                    <a
+                      href="https://pensive-galileo-3a9e07.netlify.app/"
+                      target="”_blank”"
+                    >
+                      <img
+                        src="./assets/mockups/todoapp.png"
+                        alt="REACT Todo App"
+                    /></a>
+                  </div>
+                  <h2>Todo App</h2>
+                </div>
+              </div>
+              <div class="nslider-slide" id="slide-4">
+                <div class="portfolio-item">
+                  <div>
+                    <h3>PHP, JavaScript, MySQL</h3>
+                    <a
+                      href="https://github.com/LaimaNam/vcs_project"
+                      target="”_blank”"
+                    >
+                      <img src="./assets/mockups/phpProject.png" alt=""
+                    /></a>
+                  </div>
+                  <h2>Web + login</h2>
+                </div>
+              </div>
+              <div class="nslider-slide" id="slide-5">
+                <div class="portfolio-item">
+                  <div>
+                    <h3>HTML, CSS</h3>
+                    <a
+                      href="https://goofy-northcutt-4d3d42.netlify.app/"
+                      target="”_blank”"
+                    >
+                      <img
+                        src="./assets/mockups/hexagon.png"
+                        alt="artist portfolio page mockup"
+                    /></a>
+                  </div>
+                  <h2>Artist portfolio</h2>
+                </div>
+              </div>
+              <div class="nslider-slide" id="slide-6">
+                <div class="portfolio-item">
+                  <div>
+                    <h3>Bootstrap</h3>
+                    <a
+                      href="https://eager-curie-efd85d.netlify.app/"
+                      target="”_blank”"
+                    >
+                      <img
+                        src="./assets/mockups/sushi-page.png"
+                        alt="artist portfolio page mockup"
+                    /></a>
+                  </div>
+                  <h2>Sushi place page</h2>
+                </div>
+              </div>
+              <div class="nslider-slide" id="slide-6">
+                <div class="portfolio-item">
+                  <div>
+                    <h3>Nodejs CRUD, JavaScript</h3>
+                    <a
+                      href="https://github.com/LaimaNam/carwash-reservation-app"
+                      target="”_blank”"
+                    >
+                      <img
+                        src="./assets/mockups/carwashapp.png"
+                        alt="artist portfolio page mockup"
+                    /></a>
+                  </div>
+                  <h2>Registration form</h2>
+                </div>
+              </div>
             </div>
+            <!-- Carousel Controls -->
+            <div class="nslider-button nslider-button-prev"></div>
+            <div class="nslider-button nslider-button-next"></div>
           </div>
-
-          <div class="card webCard flip-card" data-aos="fade-up">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <a href="#portfolio"
-                  ><img src="/assets/php-sql-website2.png" alt=""
-                /></a>
-              </div>
-              <a href="project_healthy-life/index.html" target="top"
-                ><div class="flip-card-back">
-                  <p>Responsive Healthy Lifestyle Page</p>
-                  <h6>Php, Sql database included (on my Git profile)</h6>
-                </div></a
-              >
-            </div>
-          </div>
-
-          <div class="card webCard flip-card" data-aos="fade-up">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="/assets/sushi-page2.png" alt="" />
-              </div>
-              <a href="bootstrap-project-sushi/index.html" target="top"
-                ><div class="flip-card-back">
-                  <p>Responsive Sushi Place Page</p>
-                </div></a
-              >
-            </div>
-          </div>
-
-          <div class="card webCard flip-card" data-aos="fade-up">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="/assets/quote-generator.png" alt="" />
-              </div>
-              <a href="quote-generator/index.html" target="top"
-                ><div class="flip-card-back">
-                  <p>Daily Quote Generator</p>
-                </div></a
-              >
-            </div>
-          </div>
-
-          <div class="card flip-card" data-aos="fade-up">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="/assets/score-keeper.png" alt="" />
-              </div>
-              <a href="score-keeper/index.html" target="top"
-                ><div class="flip-card-back">
-                  <p>Score Keeper</p>
-                </div></a
-              >
-            </div>
-          </div>
-
-          <div class="card flip-card" data-aos="fade-up">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="/assets/rgb-color-generator.png" alt="" />
-              </div>
-              <a href="event3/index.html" target="top"
-                ><div class="flip-card-back">
-                  <p>RGB Color Generator</p>
-                </div></a
-              >
-            </div>
+        </div>
+      </section>
+      <section class="portfolio-gallery">
+        <div>
+          <h3>Online pages</h3>
+          <div>
+            <!-- quote generator, wordpres page, webdev portfolio, react sticky notes, react todo app, ecommerce shop,  -->
           </div>
         </div>
       </section>
