@@ -1,4 +1,4 @@
-const header = document.querySelector('header');
+const header = document.querySelector("header");
 
 export const renderNavigation = () => {
   header.innerHTML = `
@@ -97,7 +97,7 @@ export const renderNavigation = () => {
     </ul>
     <div class="theme-switcher-wrapper">
       
-      <span id="toggle-icon">
+      <span id="toggle-icon nav-link">
         <i id="moon" class="fas fa-moon moon"></i>
         <i id="sun" class="fas fa-sun moon"></i>
       </span>
