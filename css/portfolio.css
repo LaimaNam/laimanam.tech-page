@@ -1,0 +1,94 @@
+#portfolioCards {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+.card {
+  background: var(--nav-primary);
+  border-radius: 2px;
+  display: inline-block;
+  height: 360px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin: 1rem;
+  width: 300px;
+  max-width: 100%;
+  /*  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); */
+}
+
+.card img {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  height: -webkit-fill-available;
+  padding: 10px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.webCard {
+  width: 500px;
+  max-width: 100%;
+  height: 350px;
+}
+
+/* NEW CODE FOR PORTFOLIO PAGE */
+.portfolio-output {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.portfolio-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-item div h3 {
+  text-align: right;
+  font-size: 20px;
+}
+
+.portfolio-item div img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.portfolio-item h2 {
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+  margin: 0;
+  padding: 20px;
+  letter-spacing: 3px;
+  font-size: 3em;
+}
+
+.nslider {
+  min-height: 85vh !important;
+  /* min-width: 90vw; */
+}
+
+.nslider .nslider-button {
+  background-color: transparent;
+  color: #fff;
+}
+
+/*  Small screens */
+@media only screen and (max-width: 600px) {
+  .card {
+    height: 300px;
+    margin: 20px auto;
+    /* height: 360px; */
+  }
+
+  .webCard {
+    width: 350px;
+    /*  max-width: 100%; */
+    height: 200px;
+    margin: 20px auto;
+  }
+}

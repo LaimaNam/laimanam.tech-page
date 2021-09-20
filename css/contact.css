@@ -1,0 +1,42 @@
+/*  C o n t a c t  M e */
+
+#contact {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.contactMe {
+  margin: 0 auto;
+  display: flex;
+  /*  flex-direction: row; */
+  flex-wrap: wrap;
+  list-style: none;
+  width: auto;
+}
+
+.contact-link {
+  color: var(--main-color);
+  font-size: 4rem;
+  padding: 1rem;
+  text-shadow: 0 -3px 1px var(--icon-shadow);
+}
+
+.contact-link:hover {
+  cursor: pointer;
+  text-shadow: 0 -5px 1px var(--icon-shadow);
+}
+
+/*  Small screens */
+@media only screen and (max-width: 600px) {
+  main {
+    margin: 0;
+  }
+
+  .contactMe {
+    margin: 40px auto;
+  }
+}

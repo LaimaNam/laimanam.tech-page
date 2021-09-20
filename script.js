@@ -2,15 +2,13 @@
 import { checkCurrentTheme, switchTheme } from "./components/PageMode.js";
 import {
   renderNavigation,
-  // renderThemeSwitcher,
+  renderThemeSwitcher,
 } from "./components/Navigation.js";
 import typing from "./components/Typing.js";
-// renderThemeSwitcher();
 renderNavigation();
 
 // -- variables
 // - DOM Elements
-const toggleSwitch = document.querySelector('input[type="checkbox"]');
 
 // -- events
 document.addEventListener("DOMContentLoaded", () => {
@@ -18,6 +16,17 @@ document.addEventListener("DOMContentLoaded", () => {
     typing();
   }
 
-  checkCurrentTheme(toggleSwitch);
-  toggleSwitch.addEventListener("change", switchTheme);
+  renderThemeSwitcher();
 });
+
+// events for deploying: ---------------
+// -- events
+// document.addEventListener('DOMContentLoaded', () => {
+
+//   if (window.location.href === "https://laimanam.tech/" || window.location.href === "https://laimanam.tech/index.html") {
+//     typing();
+//   }
+
+//   checkCurrentTheme(toggleSwitch);
+//   toggleSwitch.addEventListener('change', switchTheme);
+// });
