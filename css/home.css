@@ -7,14 +7,14 @@ h1 {
 h2 {
   font-size: 1.5rem;
   letter-spacing: 2px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 2px;
   color: var(--text-primary);
   font-weight: 400;
 }
 
 .h1span {
-  font-family: "La Belle Aurore", cursive;
+  font-family: 'La Belle Aurore', cursive;
   color: #515152;
   display: flex;
   flex-wrap: wrap;
@@ -101,7 +101,7 @@ h2 {
 /*  C o n t a c t   b u t t o n */
 h3,
 #contactBtn {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.8rem;
   letter-spacing: 2px;
   /* color: #8d8d8d; */

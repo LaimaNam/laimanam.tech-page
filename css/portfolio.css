@@ -1,47 +1,7 @@
-#portfolioCards {
-  display: flex;
-  flex-wrap: wrap;
-  /* justify-content: space-between; */
-}
-.card {
-  background: var(--nav-primary);
-  border-radius: 2px;
-  display: inline-block;
-  height: 360px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin: 1rem;
-  width: 300px;
-  max-width: 100%;
-  /*  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); */
-}
-
-.card img {
-  min-width: 100%;
-  min-height: 100%;
-  max-width: 100%;
-  height: -webkit-fill-available;
-  padding: 10px;
-}
-
-.card p {
-  text-align: center;
-}
-
-.webCard {
-  width: 500px;
-  max-width: 100%;
-  height: 350px;
-}
-
 /* NEW CODE FOR PORTFOLIO PAGE */
-.portfolio-output {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 30px;
+.container {
+  margin-top: 60px;
 }
-
 .portfolio-item {
   width: 100%;
   display: flex;
@@ -68,27 +28,56 @@
 }
 
 .nslider {
-  min-height: 85vh !important;
-  /* min-width: 90vw; */
+  min-height: 550px !important;
+  margin-top: 20px;
 }
 
 .nslider .nslider-button {
   background-color: transparent;
-  color: #fff;
+}
+
+.nslider .nslider-button.nslider-button-next {
+  right: -10px;
+}
+
+.nslider .nslider-button.nslider-button-prev {
+  left: -15px;
+}
+
+/* portfolio gallery */
+.portfolio-gallery {
+  margin-top: 150px;
+}
+
+.working-on-wrapper a {
+  color: var(--text-primary);
+}
+
+.working-on-wrapper h2 {
+  letter-spacing: 3px;
+}
+
+.working-on-ecommerce-page {
+  width: 100%;
+}
+.working-on-ecommerce-page img {
+  width: 100%;
+  object-fit: cover;
 }
 
 /*  Small screens */
 @media only screen and (max-width: 600px) {
-  .card {
-    height: 300px;
-    margin: 20px auto;
-    /* height: 360px; */
+  .portfolio-item h2 {
+    font-size: 1em;
   }
 
-  .webCard {
-    width: 350px;
-    /*  max-width: 100%; */
-    height: 200px;
-    margin: 20px auto;
+  .nslider {
+    min-height: 400px !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .nslider {
+    min-height: 300px !important;
   }
 }
