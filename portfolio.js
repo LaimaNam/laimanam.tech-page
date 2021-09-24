@@ -83,7 +83,7 @@ const renderSliderOutput = (arr) => {
     <div class="portfolio-item">
       <div>
         <h3>${item.technologies}</h3>
-        <a href=${item.link} target="”_blank”">
+        <a href=${item.link} target="_blank">
           <img
             src=${item.imgSrc}
             alt="${item.title}"
